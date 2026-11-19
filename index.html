@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff8800;
+            margin-bottom: 25px;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 900px;
+            background: #222;
+            padding: 10px;
+            border-radius: 12px;
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+        }
+
+        p {
+            color: #aaa;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Video</h1>
+
+    <div class="video-container">
+        <video controls playsinline>
+            <source src="tado.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+    </div>
+
+    <p>Thank you for watching!</p>
+
+</body>
+</html>
